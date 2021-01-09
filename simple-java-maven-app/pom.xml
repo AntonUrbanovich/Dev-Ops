@@ -13,11 +13,6 @@
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
-        <properties>
-       <java.version>1.8</java.version>
-       <maven.compiler.source>1.8</maven.compiler.source>
-       <maven.compiler.target>1.8</maven.compiler.target>
-</properties>
     </dependency>
   </dependencies>
   <build>
@@ -26,7 +21,7 @@
         <!-- Build an executable JAR -->
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.6.3</version>
+        <version>3.0.2</version>
         <configuration>
           <archive>
             <manifest>
@@ -39,9 +34,4 @@
       </plugin>
     </plugins>
   </build>
-  <properties>
-       <java.version>1.8</java.version>
-       <maven.compiler.source>1.8</maven.compiler.source>
-       <maven.compiler.target>1.8</maven.compiler.target>
-</properties>
 </project>
