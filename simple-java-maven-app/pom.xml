@@ -30,6 +30,7 @@
               <mainClass>com.mycompany.app.App</mainClass>
             </manifest>
           </archive>
+          <executable>C:\jdk-15.0.1\bin\javac</executable>
         </configuration>
       </plugin>
     </plugins>
