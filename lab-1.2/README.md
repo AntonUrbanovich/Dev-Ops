@@ -2,7 +2,7 @@
 Установливаем docker  
 Скачиваем образ nginx и проверяем наличие образа:  
 
--docker pull nginx:latest  
+- docker pull nginx:latest  
 
 
 Создаем папку nginx и в ней etc:  
@@ -14,7 +14,7 @@
 
 Запускаем контейнер подмонтировав созданную папку etc в etc/nginx и пробрасываем порты 80 из контейнера на хост в порт 8080  
 
--docker run -it -p 8080:80 -v $pwd/nginx/etc:etc/nginx nginx /bin/bash  
+- docker run -it -p 8080:80 -v $pwd/nginx/etc:etc/nginx nginx /bin/bash  
 
 Проверяем результат в браузере, зайдя на http://localhost:8080/  
 
