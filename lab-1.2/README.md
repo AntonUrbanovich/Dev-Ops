@@ -2,6 +2,8 @@
 Установливаем docker  
 Скачиваем образ nginx и проверяем наличие образа:  
 
+-docker pull nginx:latest  
+
 
 Создаем папку nginx и в ней etc:  
 
