@@ -4,6 +4,8 @@
 
 - docker pull nginx:latest  
 
+![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/docker.jpg)
+
 
 Создаем папку nginx и в ней etc:  
 
@@ -19,5 +21,8 @@
 Проверяем результат в браузере, зайдя на http://localhost:8080/  
 
 
-![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/docker.jpg)
+
+![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/docker2.jpg)
+
+
 
