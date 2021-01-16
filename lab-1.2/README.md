@@ -31,7 +31,7 @@
 
 Делаем build Dockerfile:  
 
-- docker build -t urbanobivich/apache2 .  
+- docker build -t urbanobivich/apache2   
 
 ![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/dockerfile1.jpg)
 
@@ -57,6 +57,30 @@
 
 Делаем push полученного образа в dockerhub:  
 
+
+
+
+
+
+
+
+
+
+
+
+
+# Dockercompose:  
+
+Cоздаём в корневой папке проекта файл docker-compose.yml. В файле указанно 3 контейнера, 2 из них были сделанны раннее, 1 новый с mysql. Установленя свзять между ngnix and apache apache and database  
+
+Запускаем docker-compose:  
+
+- docker-compose up  
+
+При открытии страницы в браузерe http://localhost:80/ видим дефолктную страницу apache:  
+
+
+![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/docker-compose1.jpg)
 
 
 
