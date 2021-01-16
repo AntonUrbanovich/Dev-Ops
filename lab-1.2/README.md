@@ -39,7 +39,7 @@
 Создаем папки:  
 
 - mkdir web  
-cd web  
+- cd web  
 - mkdir etc  
 - mkdir www  
 
@@ -53,10 +53,10 @@ cd web
 
 Остановим docker container:  
 
--docker stop [container id]  
+- docker stop [container id]  
 
 Делаем push полученного образа в dockerhub:  
 
--
+
 
 
