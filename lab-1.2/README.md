@@ -22,7 +22,41 @@
 
 
 
-![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/docker2.jpg)
+![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/docker2.jpg)  
 
+
+# Dockerfile:  
+
+Создаем файл Dokcerfile в корне проекта.В этом файле из образа ubuntu:bionic создаём контейнер в котором требуется, обновить все пакеты системы, установить apache2, ntp, jdk и назначить WORKDIR на /var/www/sit.  
+
+Делаем build Dockerfile:  
+
+- docker build -t urbanobivich/apache2 .  
+
+![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/dockerfile1.jpg)
+
+
+Создаем папки:  
+
+- mkdir web  
+cd web  
+- mkdir etc  
+- mkdir www  
+
+
+Запускаем docker container:  
+
+- docker run -it -p 8081:80 urbanovich/apache2 bash  
+
+![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/dockerfile2.jpg)
+  
+
+Остановим docker container:  
+
+-docker stop [container id]  
+
+Делаем push полученного образа в dockerhub:  
+
+-
 
 
