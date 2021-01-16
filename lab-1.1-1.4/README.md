@@ -3,7 +3,7 @@
 - packer build .\ubuntu.json
 при успешном создании box увидим:  
 
-![Image alt]https://github.com/impalla215/Dev-Ops/blob/master/screens/packer.jpg  
+![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/packer.jpg)    
 
 
 
@@ -13,7 +13,7 @@
 
 Проверим место хранения box:  
 
-![Image alt]https://github.com/impalla215/Dev-Ops/blob/master/screens/packer2.jpg  
+![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/packer2.jpg)  
 
 
 
@@ -40,7 +40,7 @@ config.vm.box = "file://..\ubuntu-18.04-1.box"
 ~$cat /etc/os-release  
 
 
-![Image alt]https://github.com/impalla215/Dev-Ops/blob/master/screens/vagrant.jpg
+![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/vagrant.jpg)
 
 
 
