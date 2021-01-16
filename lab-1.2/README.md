@@ -71,7 +71,7 @@
 
 # Dockercompose:  
 
-Cоздаём в корневой папке проекта файл docker-compose.yml. В файле указанно 3 контейнера, 2 из них были сделанны раннее, 1 новый с mysql. Установленя свзять между ngnix and apache apache and database  
+Cоздаём в корневой папке проекта файл docker-compose.yml. В файле указано 3 контейнера, 2 из них были сделанны раннее, 1 новый с mysql. Установленя свзять между ngnix and apache, apache and database  
 
 Запускаем docker-compose:  
 
@@ -80,7 +80,26 @@ Cоздаём в корневой папке проекта файл docker-comp
 При открытии страницы в браузерe http://localhost:80/ видим дефолктную страницу apache:  
 
 
-![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/docker-compose1.jpg)
+![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/docker-compose1.jpg)  
+
+
+Для наглядного изучения проксирования на nginx использовал:  
+https://www.8host.com/blog/shifrovanie-soedinenij-tomcat-8-na-apache-ili-nginx-v-ubuntu-16-04/  
+
+Для проверки соединения apache and database можно присоединиться к контейнеру:  
+
+- docker-compose exec web /bin/bash  
+
+В дополнение к ним создали ещё 1 контейнер с tomcat-сервером на порту 8080 и выполнили настройку в балансировщике при обращении http://localhost:tomcat-server/  
+
+
+![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/docker-compose2.jpg)
+
+
+
+
+
+
 
 
 
