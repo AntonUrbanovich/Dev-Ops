@@ -18,3 +18,6 @@
 
 Проверяем результат в браузере, зайдя на http://localhost:8080/  
 
+
+![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/docker.jpg)
+
