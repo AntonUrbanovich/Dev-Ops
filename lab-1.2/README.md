@@ -92,7 +92,7 @@ https://www.8host.com/blog/shifrovanie-soedinenij-tomcat-8-na-apache-ili-nginx-v
 
 Для соединения с базой через link, который указан в configs/my.cnf(порт 3306), используем telnet:  
 
--apt install tenet  
+-apt install telnet  
 
 -telnet database 3306:  
 
