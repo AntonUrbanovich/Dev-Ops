@@ -71,13 +71,13 @@
 
 # Dockercompose:  
 
-Cоздаём в корневой папке проекта файл docker-compose.yml. В файле указано 3 контейнера, 2 из них были сделаны ранее, 1 новый с mysql. Установленя свзять между ngnix and apache, apache and database  
+Cоздаём в корневой папке проекта файл docker-compose.yml. В файле указано 3 контейнера, 2 из них были сделаны ранее, 1 новый с mysql. Установлена связь между ngnix and apache, apache and database  
 
 Запускаем docker-compose:  
 
 - docker-compose up  
 
-При открытии страницы в браузерe http://localhost:80/ видим дефолктную страницу apache:  
+При открытии страницы в браузерe http://localhost:80/ видим дефолтную страницу apache:  
 
 
 ![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/docker-compose1.jpg)  
