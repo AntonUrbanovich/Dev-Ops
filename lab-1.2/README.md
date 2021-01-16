@@ -1,5 +1,5 @@
 # Работа с docker:  
-Установливаем docker  
+Устанавливаем docker  
 Скачиваем образ nginx и проверяем наличие образа:  
 
 - docker pull nginx:latest  
