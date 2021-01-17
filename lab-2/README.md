@@ -17,6 +17,7 @@ Java web-application будем скачиваться из репозитори
 
 ![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/Jenkins2.jpg)  
 После успешного скачивания и создания артефакта, создадим задачу deplay артефакта на удаленный сервер amazon по средством publish over SSH.  
+
 Для этого нужно в конфигурации системы Jenkins указать private key и адресс удаленного сервера amazon  
 
 
