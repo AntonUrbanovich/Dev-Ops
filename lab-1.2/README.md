@@ -122,13 +122,13 @@ https://kubernetes.io/ru/docs/reference/kubectl/cheatsheet/
 Создаём пространство имён:  
 - kubectl create namespace test  
 Сохраняем пространства имен для всех следующих команда kubectl в этом контексте:  
-- kubectl config set-context --current --namespace=test
-Запускаем deployment:
-- kubectl apply -f ant-deployment.yml
-Нас интересует тип NodePort, так как к нему можно подключаться из вне.
-- kubectl expose ant-deployment --type=NodePort --port=8000
+- kubectl config set-context --current --namespace=test  
+Запускаем deployment:  
+- kubectl apply -f ant-deployment.yml  
+Нас интересует тип NodePort, так как к нему можно подключаться из вне.  
+- kubectl expose ant-deployment --type=NodePort --port=8000  
 Обращение к приложению:  
-- minicube service ant-deployment -n test
+- minicube service ant-deployment -n test  
 Загрузка конфига в кластер:  
 - kubectl apply -f ingress-nginx.yaml  
 Используемая литература:  
