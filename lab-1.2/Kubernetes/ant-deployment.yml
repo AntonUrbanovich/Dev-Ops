@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: ant-deployment
+  name: ant-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ant-deployment
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: ant-deployment
+    spec:
+      containers:
+      - image: anton/test
+        name: test
+        imagePullPolicy: Never
+        resources: {}
+status: {}
