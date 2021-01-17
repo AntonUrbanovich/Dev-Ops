@@ -4,7 +4,7 @@
 
 Создаем новый проект Staging и добавляем задачу для сборки простого java web-application.  
 
-Java web-application будем скачиваться из репозитория github поэтому нужно создать credentional.  
+Java web-application будет скачиваться из репозитория github, поэтому нужно создать credentional.  
 
 Далее генерируем ssh-пару:  
 
