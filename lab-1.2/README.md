@@ -130,8 +130,7 @@ https://kubernetes.io/ru/docs/reference/kubectl/cheatsheet/
 Обращение к приложению:  
 - minicube service ant-deployment -n test  
 Загрузка конфига в кластер:  
-- kubectl apply -f ingress-nginx.yaml  
-Используемая литература:  
+- kubectl apply -f ingress-nginx.yaml  Используемая литература:  
 - https://kubernetes.io/docs/concepts/services-networking/ingress/#the-ingress-resource - установка Ingress rule.
 - https://serveradmin.ru/nastroyka-kubernetes/#_Ingress - настройка и загрузка конфига в кластер кубернетиса.
 
