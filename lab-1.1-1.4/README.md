@@ -63,6 +63,9 @@ config.vm.box = "file://..\ubuntu-18.04-1.box"
 Пробросим порты следующим образом: хост:22022->гость:22, хост:22080->гость:80, хост:22443->гость:443, хост:22306->гость:3306.  
 
 
+![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/ports.png)  
+
+
 
 
 
