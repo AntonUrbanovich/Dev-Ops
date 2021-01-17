@@ -103,11 +103,37 @@ https://www.8host.com/blog/shifrovanie-soedinenij-tomcat-8-na-apache-ili-nginx-v
 В дополнение к ним создали ещё 1 контейнер с tomcat-сервером на порту 8080 и выполнили настройку в балансировщике при обращении http://localhost:tomcat-server/  
 
 
-![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/docker-compose2.jpg)
+![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/docker-compose2.jpg)  
+
+
+
+# Работа с kubernetes:  
 
 
 
 
+Для наглядного изучения команда Kubernetes использовал:  
+https://kubernetes.io/ru/docs/reference/kubectl/cheatsheet/  
+
+
+
+Запуcкаем локальный кластер Kubernetes:  
+- minikube start --vm-driver=docker
+Создаём пространство имён:  
+- kubectl create namespace test  
+Сохраняем пространства имен для всех следующих команда kubectl в этом контексте:  
+- kubectl config set-context --current --namespace=test
+Запускаем deployment:
+- kubectl apply -f ant-deployment.yml
+Нас интересует тип NodePort, так как к нему можно подключаться из вне.
+- kubectl expose ant-deployment --type=NodePort --port=8000
+Обращение к приложению:  
+- minicube service ant-deployment -n test
+Загрузка конфига в кластер:  
+- kubectl apply -f ingress-nginx.yaml  
+Используемая литература:  
+- https://kubernetes.io/docs/concepts/services-networking/ingress/#the-ingress-resource - установка Ingress rule.
+- https://serveradmin.ru/nastroyka-kubernetes/#_Ingress - настройка и загрузка конфига в кластер кубернетиса.
 
 
 
