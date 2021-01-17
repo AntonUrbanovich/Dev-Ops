@@ -1,0 +1,20 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+Vagrant.configure("2") do |config|
+   config.vm.network "public_network"
+   config.vm.hostname = "testing"
+   config.vm.box = "file:/home/anton/vagrant/ubuntu-18.04-0.1.box"
+   config.vm.network "forwarded_port", guest: 22, host: 22022
+   config.vm.network "forwarded_port", guest: 80, host: 22080
+   config.vm.network "forwarded_port", guest: 443, host: 22443
+   config.vm.network "forwarded_port", guest: 3306, host: 22306
+ config.vm.provider "virtualbox" do |vb|
+	vb.memory = "2048"
+ config.vm.provision "ansible" do |ansible|
+    ansible.playbook = "myplay.yml"
+
+  end
+
+ end
+ 
+end
