@@ -24,7 +24,7 @@
 
 Для этого создадим базовый файл Vagrantfile при помощи команды:  
 
--vagrant init
+- vagrant init
 
 После чего, отдерактируем его, прописывая путь, где брать образ virtualbox:  
 
@@ -32,13 +32,13 @@ config.vm.box = "file://..\ubuntu-18.04-1.box"
 
 Далее запускаем виртуальную машину:  
 
--vagrant up
+- vagrant up
 
 Проверяем статус машины:  
 
--vagrant ssh  
+- vagrant ssh  
 
-~$cat /etc/os-release  
+~ $cat /etc/os-release  
 
 
 ![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/vagrant.jpg)  
