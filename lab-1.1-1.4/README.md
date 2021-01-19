@@ -38,7 +38,7 @@ config.vm.box = "file://..\ubuntu-18.04-1.box"
 
 - vagrant ssh  
 
-~ $cat /etc/os-release  
+- ~$cat /etc/os-release  
 
 
 ![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/vagrant.jpg)  
