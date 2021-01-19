@@ -24,7 +24,7 @@
 
 Для этого создадим базовый файл Vagrantfile при помощи команды:  
 
-- 'agrant init md_indent'
+- `agrant init md_indent`
 
 После чего, отдерактируем его, прописывая путь, где брать образ virtualbox:  
 
