@@ -8,15 +8,16 @@
 
 
 Создаем папку nginx и в ней etc:  
-
+```
 - mkdir nginx  
 - cd nginx  
 - mkdir etc  
 
+```  
 
 Запускаем контейнер подмонтировав созданную папку etc в etc/nginx и пробрасываем порты 80 из контейнера на хост в порт 8080  
 
-- docker run -it -p 8080:80 -v $pwd/nginx/etc:etc/nginx nginx /bin/bash  
+- `docker run -it -p 8080:80 -v $pwd/nginx/etc:etc/nginx nginx /bin/bash` 
 
 Проверяем результат в браузере, зайдя на http://localhost:8080/  
 
@@ -31,29 +32,30 @@
 
 Делаем build Dockerfile:  
 
-- docker build -t urbanobivich/apache2   
+- `docker build -t urbanobivich/apache2`   
 
 ![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/dockerfile1.jpg)
 
 
 Создаем папки:  
-
+```  
 - mkdir web  
 - cd web  
 - mkdir etc  
 - mkdir www  
 
+```  
 
 Запускаем docker container:  
 
-- docker run -it -p 8081:80 urbanovich/apache2 bash  
+- `docker run -it -p 8081:80 urbanovich/apache2 bash`  
 
 ![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/dockerfile2.jpg)
   
 
 Остановим docker container:  
 
-- docker stop [container id]  
+- `docker stop [container id]`  
 
 Делаем push полученного образа в dockerhub:  
 
@@ -75,7 +77,7 @@ Cоздаём в корневой папке проекта файл docker-comp
 
 Запускаем docker-compose:  
 
-- docker-compose up  
+- `docker-compose up`  
 
 При открытии страницы в браузерe http://localhost:80/ видим дефолтную страницу apache:  
 
@@ -92,9 +94,9 @@ https://www.8host.com/blog/shifrovanie-soedinenij-tomcat-8-na-apache-ili-nginx-v
 
 Для соединения с базой через link, который указан в configs/my.cnf(порт 3306), используем telnet:  
 
-- apt install telnet  
+- `apt install telnet`  
 
-- telnet database 3306:  
+- `telnet database 3306:`  
 
 
 ![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/docker-compose3.jpg)
@@ -118,17 +120,17 @@ https://kubernetes.io/ru/docs/reference/kubectl/cheatsheet/
 
 
 Запуcкаем локальный кластер Kubernetes:  
-- minikube start --vm-driver=docker
+- `minikube start --vm-driver=docker`
 Создаём пространство имён:  
-- kubectl create namespace test  
+- `kubectl create namespace test`  
 Сохраняем пространства имен для всех следующих команда kubectl в этом контексте:  
-- kubectl config set-context --current --namespace=test  
+- `kubectl config set-context --current --namespace=test`  
 Запускаем deployment:  
-- kubectl apply -f ant-deployment.yml  
+- `kubectl apply -f ant-deployment.yml`  
 Нас интересует тип NodePort, так как к нему можно подключаться из вне.  
-- kubectl expose ant-deployment --type=NodePort --port=8000  
+- `kubectl expose ant-deployment --type=NodePort --port=8000`  
 Обращение к приложению:  
-- minicube service ant-deployment -n test  
+- `minicube service ant-deployment -n test`  
 Загрузка конфига в кластер:  
 - kubectl apply -f ingress-nginx.yaml  Используемая литература:  
 - https://kubernetes.io/docs/concepts/services-networking/ingress/#the-ingress-resource - установка Ingress rule.
