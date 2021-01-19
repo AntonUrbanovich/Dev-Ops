@@ -1,4 +1,4 @@
-﻿# Dev-Ops
+# Dev-Ops
 Dev-Ops Labs
 
 # [1.1-1.4. - packer, Vagrant, chef(Ansible).](https://github.com/impalla215/Dev-Ops/tree/master/lab-1.1-1.4)  
