@@ -115,19 +115,33 @@ https://kubernetes.io/ru/docs/reference/kubectl/cheatsheet/
 
 
 Запуcкаем локальный кластер Kubernetes:  
-- `minikube start --vm-driver=docker`
+
+- `minikube start --vm-driver=docker`  
+
 Создаём пространство имён:  
+
 - `kubectl create namespace test`  
+
 Сохраняем пространства имен для всех следующих команда kubectl в этом контексте:  
+
 - `kubectl config set-context --current --namespace=test`  
+
 Запускаем deployment:  
+
 - `kubectl apply -f ant-deployment.yml`  
+
 Нас интересует тип NodePort, так как к нему можно подключаться из вне.  
+
 - `kubectl expose ant-deployment --type=NodePort --port=8000`  
+
 Обращение к приложению:  
+
 - `minicube service ant-deployment -n test`  
+
 Загрузка конфига в кластер:  
+
 - kubectl apply -f ingress-nginx.yaml  Используемая литература:  
+
 - https://kubernetes.io/docs/concepts/services-networking/ingress/#the-ingress-resource - установка Ingress rule.
 - https://serveradmin.ru/nastroyka-kubernetes/#_Ingress - настройка и загрузка конфига в кластер кубернетиса.
 
