@@ -8,12 +8,10 @@
 
 
 Создаем папку nginx и в ней etc:  
-```
-- mkdir nginx  
-- cd nginx  
-- mkdir etc  
-
-```  
+- `mkdir nginx`  
+- `cd nginx`  
+- `mkdir etc`  
+  
 
 Запускаем контейнер подмонтировав созданную папку etc в etc/nginx и пробрасываем порты 80 из контейнера на хост в порт 8080  
 
@@ -38,13 +36,10 @@
 
 
 Создаем папки:  
-```  
-- mkdir web  
-- cd web  
-- mkdir etc  
-- mkdir www  
-
-```  
+- `mkdir web`  
+- `cd web`  
+- `mkdir etc`  
+- `mkdir www`  
 
 Запускаем docker container:  
 
