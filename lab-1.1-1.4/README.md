@@ -1,7 +1,7 @@
 # Работа с packer, Vagrant, Ansible or chef
 Создание базового box с Ubuntu 18.04 с помощью packer, выходной формат - vagrant.  
 Установка packer, vagrant, virtualbox. C помощью packer создаем box:  
-- packer build .\ubuntu.json
+- `packer build .\ubuntu.json`  
 при успешном создании box увидим:  
 
 ![Image alt](https://github.com/impalla215/Dev-Ops/blob/master/screens/packer.jpg)    
